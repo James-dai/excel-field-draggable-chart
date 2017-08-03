@@ -1,19 +1,26 @@
-# draggable-example
+# excel-field-draggable-chart
 
-> Example usage of [vue.draggable](https://github.com/SortableJS/Vue.Draggable)
-
-![demo gif](example.gif)
-
-## Build Setup
-
-``` bash
-# install dependencies
+## 安装
+```
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
 ```
 
+## 开发
+
+```
+npm run dev
+```
+
+## 原理
+
+使用了以下插件：
+
+* element-ui       // 布局及样式
+* vue-xlsx-table   // 导入excel并解析
+* vuedraggable     // 拖拽
+* v-charts         // eleme FE 出品的vue + echarts 的便捷产品
+
+导入excel，解析图表，  
+智能判断各列数据类型，  
+拖进维度和度量区，  
+切换图表类型
